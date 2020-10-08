@@ -1,3 +1,17 @@
+ /* Internal CSS+hero img.(it own tag) */
+    
+      html {
+    /*background: 
+      url(https://pm1.narvii.com/6007/c9003beda4e0f5a99b8cb45ac2e717664262e905_hq.jpg)
+        no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;*/
+    background: 
+      url(https://cdn.wallpapersafari.com/5/47/36DArO.jpg)
+        no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+  }
 /* 3d boxs */
 
 /*Build the scene and rotate on hover*/
@@ -5,20 +19,21 @@
 .scene { 
 	width: 260px;
 	height: 400px;
-	margin: 30px;
-	float: left;
- 	perspective: 1000px; 
+	margin: 30px;  
+	float: left; 
+	perspective: 1000px;
+	margin-left: 120px;
 }
 
- .movie { 
+.movie { 
 	width: 260px;
 	height: 400px;
-	transform-style: preserve-3d;
+	transform-style: preserve-3d; 
 	transform: translateZ(-130px);
-	transition: transform 350ms;
+	transition: transform 350ms; 
 }
 
- .movie:hover { 
+.movie:hover { 
 	transform: rotateY(-78deg) translateZ(20px); 
 }
 
@@ -26,15 +41,16 @@
 
 .movie .poster, 
 .movie .info {
-	position: absolute;
+	position: absolute;  
 	width: 260px;
 	height: 400px;
-	background-color: #fff;
+	/* background-color: #fff; */ 
+	background-color: black;
 
 }
 
- .movie .poster  { 
-	transform: translateZ(130px);
+.movie .poster  { 
+	transform: translateZ(130px); 
  	background-size: cover; 
 	background-repeat: no-repeat; 
 }
@@ -49,10 +65,10 @@
 /*Movie information*/
 
 .info header {
-	color: #FFF;
-	padding: 7px 10px;
+	color: #FFF; 
+	/* padding: 7px 10px; */
 	font-weight: bold;
-	height: 195px;
+	height: 155px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-shadow: 0px 1px 1px rgba(0,0,0,1);
@@ -62,6 +78,12 @@
 	margin: 0 0 2px;
 	font-size: 1.4em;
 }
+.info h2 {
+	margin: 0 0 2px;
+	/* font-size: 1.4em; */
+	font-size: 17px;
+	color:white;
+}
 
 .info header .rating {
 	border: 1px solid #FFF;
@@ -69,47 +91,214 @@
 }
 
 .info p {
-	padding: 1.2em 1.4em;
-	margin: 2px 0 0;
-	font-weight: 700;
-	color: #666;
-	line-height: 1.4em;
-	border-top: 10px solid #555;
+	/* padding: 1.2em 1.4em;   */
+	margin: 2px 0 0;  
+	font-weight: 500; 
+	/* color: rgb(202, 30, 30); */
+	color:white; 
+    line-height: 1em; 
+	/* border-top: 5px solid #555; */
+	/* font-size: 13px; */
 }
 
 
 /*Posters and still images*/
 
 .scene:nth-child(1) .movie .poster {
-  background-image: url(https://s3.amazonaws.com/ooomf-com-files/Vgu1RUfKT3WN1ZYxSWaR_14672519443_13d8873062_k.jpg);
+  background-image: url(https://cdn.animeuknews.net/app/uploads/2020/02/One-Piece-Wano-1.jpg);
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url(https://s3.amazonaws.com/ooomf-com-files/LGhxuAbT5Wop4JYcrMpV_IMG_3808.jpg);
+  background-image: url(https://img.reelgood.com/content/show/f8a20845-25bc-4880-a2a3-c59e0ed87e71/poster-780.jpg);
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url(https://s3.amazonaws.com/ooomf-com-files/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg);
+  background-image: url(https://www.dhresource.com/0x0/f2/albu/g10/M01/73/65/rBVaWVypvfmAYeU7AAG2Qdy-wFs987.jpg);
 }
 
+.scene:nth-child(4) .poster {
+	background-image: url(https://static.posters.cz/image/750/plakatok/one-punch-man-destruction-i61317.jpg);
+  }
+  
+.scene:nth-child(5) .poster {
+	background-image: url(http://www.messofcords.com/wp-content/uploads/2015/10/kuroko.jpg);
+  }
+
+.scene:nth-child(6) .poster {
+	background-image: url(https://bleedingcool.com/wp-content/uploads/2019/03/mha-2.jpg);
+  }
+
+.scene:nth-child(7) .poster {
+	background-image: url(https://img3.hulu.com/user/v3/artwork/9c91ffa3-dc20-48bf-8bc5-692e37c76d88?base_image_bucket_name=image_manager&base_image=d13c235d-7145-45ff-adaa-b99f79254521&size=400x600&format=jpeg);
+  }
+  
+.scene:nth-child(8) .poster {
+	background-image: url(https://occ-0-1009-1001.1.nflxso.net/dnm/api/v6/XsrytRUxks8BtTRf9HNlZkW2tvY/AAAABUsuJAhrY_O2wzX0YUuwOaWLp1Ee7D6O4oWe1spXrVKWGNywIhz6I9g5mitrlu1dh7Jw0dVzsZG3agmi_F1T4mMOxjYAhmhB4g.jpg);
+  }
+
+.scene:nth-child(9) .poster {
+	background-image: url(https://static.tvtropes.org/pmwiki/pub/images/tokyo_ghoul_5787.jpg);
+  }
+
+.scene:nth-child(10) .poster {
+	background-image: url(https://static.tvtropes.org/pmwiki/pub/images/black_butler_visual.png);
+  }
+
+.scene:nth-child(11) .poster {
+	background-image: url(https://static.tvtropes.org/pmwiki/pub/images/the_god_of_high_school_anime_visual.png);
+  }
+
+.scene:nth-child(12) .poster {
+	background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BCX3P4IyL._AC_SL1416_.jpg);
+  }
+
+
+
+
 .scene:nth-child(1) .info header {
-	background-image: url(https://s3.amazonaws.com/ooomf-com-files/2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg);
+	background-image: url(https://i.pinimg.com/originals/79/6c/9c/796c9c4681c1fc7adba783092629d47a.gif);
 }
 
 .scene:nth-child(2) .info header {
-	background-image: url(https://s3.amazonaws.com/ooomf-com-files/yEWFnFQRqfmY9l9efJ6g_Snap01-web.jpg);
+	background-image: url(https://38.media.tumblr.com/05e0e8b044615ef489489b74d03d3b44/tumblr_nm7eoliv5J1qj5jqso1_500.gif);
 }
 
 .scene:nth-child(3) .info header {
-	background-image: url(https://s3.amazonaws.com/ooomf-com-files/5k0CgVoIS2SUJGNZKYos__DSC2198.jpg);
+	background-image: url(https://thumbs.gfycat.com/TeemingJoyousCentipede-size_restricted.gif);
 }
 
+.scene:nth-child(4) .info header {
+	background-image: url(https://steamuserimages-a.akamaihd.net/ugc/395550145289574423/F3B909F788FCE56D5DB20326E642815E97E89F55/);
+}
 
+.scene:nth-child(5) .info header {
+	background-image: url(https://i.pinimg.com/originals/fb/b6/6b/fbb66bd29e9731bfc61f2f8d00a1446d.gif);
+}
+
+.scene:nth-child(6) .info header {
+	background-image: url(https://kurama-cdn.animegami.co.uk/wp-content/uploads/2016/06/16130815/tumblr_nxv7nxQIMq1r3rdh2o1_500.gif);
+}
+
+.scene:nth-child(7) .info header {
+	background-image: url(https://64.media.tumblr.com/1491cfb675e6c957a8a08e4414287e0f/tumblr_mustfldXUl1slun45o3_500.gifv);
+}
+
+.scene:nth-child(8) .info header {
+	background-image: url(https://i.makeagif.com/media/9-20-2015/zYyhUC.gif);
+}
+
+.scene:nth-child(9) .info header {
+	background-image: url(https://thumbs.gfycat.com/OilyColorfulHorsemouse-size_restricted.gif);
+}
+
+.scene:nth-child(10) .info header {
+	background-image: url(https://37.media.tumblr.com/5bc839650a262039c795f03c70a21f15/tumblr_n2uqk7PyMd1qh07a3o3_500.gif);
+}
+
+.scene:nth-child(11) .info header {
+	background-image: url(https://i.pinimg.com/originals/ea/10/88/ea1088de36fc69971d95f16ffeb357fb.gif);
+}
+
+.scene:nth-child(12) .info header {
+	background-image: url(https://thumbs.gfycat.com/EssentialNegligibleIslandcanary-size_restricted.gif);
+}
 
 /*Media Queries*/
 @media screen and (max-width: 60.75em){
 	.scene {
 		float: none;
-		margin: 30px auto 60px;
+	    margin: 30px auto 60px;  
 	}
 }
+/* @media screen and (max-width: 810){ 
+	.scene {
+	 
+	}
+}*/
+
+/*Footer*/
+footer{
+	/* border-radius: 4px; */
+	text-align:center;
+	bottom: 0%; 
+	position: sticky; 
+	padding:3px;
+	width: 100%; 
+	background-color:black;
+	color:rgb(202, 30, 30);
+	/*using flex box*/
+	display:flex;
+	justify-content:center;
+	align-items:center;
+  }
+  
+  footer li{
+	list-style:none;
+	display: inline;
+  }
+  footer ul{
+	list-style:none;
+	display: inline;
+	margin-right: 40px;
+  }
+  
+  
+  /*Footer end*/
+  
+  /*logo*/
+  .logo{
+	display:inline;
+  }
+  
+  .logo img{
+	width:60px;
+	height:60px;
+	border-radius:40px;
+	border: 3px double rgb(202, 30, 30);
+  }
+  
+  /*Social Media*/
+  .fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin:5px 2px; 
+  }
+  
+  .fa:hover {
+	opacity: 0.7;
+	color:rgb(202, 30, 30);
+  }
+  
+  .fa-facebook {
+	border-radius: 14px;
+	background:black;
+	color: white;
+	border: 3px double rgb(202, 30, 30);   
+  }
+  .fa-twitter {
+	border-radius: 14px;
+	background:black;
+	color: white;
+	border: 3px double rgb(202, 30, 30); 
+  }
+  .fa-instagram {
+	border-radius: 14px;
+	background:black;
+	color: white;
+	border: 3px double rgb(202, 30, 30); 
+  }
+  .fa-snapchat-ghost {
+	border-radius: 14px;
+	background:black;
+	color: white;
+	border: 3px double rgb(202, 30, 30); 
+  }
+  .copyright{
+	color:white;
+  }
+  
+  
+  

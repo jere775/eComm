@@ -1,0 +1,237 @@
+/* Internal CSS+hero img.(it own tag) */
+html {
+  background: 
+    url(https://www.fg-a.com/wallpapers/2020-black-crystalline-peaks-image.jpg)
+      no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+/*home page/*
+/*variable*/
+ :root { 
+  --primary-color:rgba(24,39,51,0.75);
+  --overlay-color:rgba(24,39,51,0.85);
+  --menu-speed:0.75s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:American Typewriter,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height:1.4;
+}
+
+.container{
+  max-width: 960px;
+  margin:auto;
+  overflow:hidden;
+  padding:0 3rem;
+  
+}
+
+.showcase{
+  background-color:var(--primary-color);
+  color:#fff;
+  height:100vh;
+  position:relative;
+}
+
+ .showcase:before{ 
+  content:'';
+  background:url(https://gracehernandez.files.wordpress.com/2015/06/s285zo.jpg) no-repeat center center/cover;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 { 
+  font-size: 4rem;
+}
+
+.showcase p { 
+  font-size: 1.1rem;
+  color:#fff;
+} 
+
+.btn {
+  display: inline-block;
+  border: none;
+  /* background: var(--primary-color); */
+  background: rgb(202, 30, 30);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  border-radius: 14px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+
+
+/*home page/*
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px; 
+  background-color: black;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;} 
+
+/* Clear floats after the columns */
+.row:after { 
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Responsive columns */
+ @media screen and (max-width: 600px) { 
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;  
+  }
+}
+
+/* Style the counter cards */
+.card {
+  text-align: center;
+  /* color: rgb(202, 30, 30); */
+  color:white;
+  background-color: black;
+  /* height: 12em; */
+}
+
+.sub-img {
+  float: left;
+  width: 100%;
+  padding: 0 10px; 
+  height: 12em;
+}
+
+.btn-1 {
+  display: inline-block;
+  border: none;
+  /* background: var(--primary-color); */
+  background: rgb(202, 30, 30);
+  /* color: rgb(202, 30, 30); */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  border-radius: 14px;
+}
+
+.btn-1:hover {
+  opacity: 0.7;
+}
+
+
+/*home page end/*
+
+
+/*Footer*/
+footer{
+  /* border-radius: 4px; */
+  text-align:center;
+  bottom: 0%;
+  position: sticky;
+  padding:3px;
+  width: 100%;
+  background-color:black;
+  color:rgb(202, 30, 30);
+  /*using flex box*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+footer li{
+  list-style:none;
+  display: inline;
+}
+
+
+/*Footer end*/
+
+/*logo*/
+.logo{
+  display:inline;
+}
+
+.logo img{
+  width:60px;
+  height:60px;
+  border-radius:40px;
+  border: 3px double rgb(202, 30, 30);
+}
+
+/*Social Media*/
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin:5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color:rgb(202, 30, 30);
+}
+
+.fa-facebook {
+  border-radius: 14px;
+  background:black;
+  color: white;
+  border: 3px double rgb(202, 30, 30);   
+}
+.fa-twitter {
+  border-radius: 14px;
+  background:black;
+  color: white;
+  border: 3px double rgb(202, 30, 30); 
+}
+.fa-instagram {
+  border-radius: 14px;
+  background:black;
+  color: white;
+  border: 3px double rgb(202, 30, 30); 
+}
+.fa-snapchat-ghost {
+  border-radius: 14px;
+  background:black;
+  color: white;
+  border: 3px double rgb(202, 30, 30); 
+}
+.copyright{
+  color:white;
+}
