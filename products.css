@@ -210,11 +210,7 @@
 	    margin: 30px auto 60px;  
 	}
 }
-/* @media screen and (max-width: 810){ 
-	.scene {
-	 
-	}
-}*/
+
 
 /*Footer*/
 footer{
@@ -300,5 +296,16 @@ footer{
 	color:white;
   }
   
-  
-  
+/* Tablet styles 
+ /* @media only screen and (max-width: 768px){  
+	.scene{
+	margin: center;	
+	}
+}*/
+
+/* Mobile styles 
+@media only screen and (max-width: 414px){ 
+	.scene{
+	margin: center;	
+	}
+}*/
